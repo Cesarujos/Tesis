@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-31T17:53:57.226Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.53" etag="3wZQ8qNQbADUjmU0DyEY" version="18.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-03T15:11:33.249Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.30" etag="bZN_S1eCQAPq0e3N1lNz" version="18.2.0" type="github">
   <diagram id="HLWjeGLK8E62nagD_4CA" name="Page-1">
     <mxGraphModel dx="1038" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -54,7 +54,7 @@
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-22" target="3VRAeIj3tUrWjSmLoF6Z-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-22" value="Proyección a diferentes tiempos de retorno con la distribución de probabilidad con menor error estándar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-22" value="Proyección a diferentes tiempos de retorno con la distribución de probabilidad con menor error estándar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="30" y="570" width="150" height="90" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-23" target="3VRAeIj3tUrWjSmLoF6Z-34" edge="1">
@@ -72,7 +72,7 @@
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-29" target="3VRAeIj3tUrWjSmLoF6Z-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-29" value="Extracción del promedio de precipitación en la cuenca" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-29" value="Extracción del promedio de precipitación en la cuenca" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#990000;strokeColor=#b85450;fontColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="215" y="707.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-32" value="Si" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
