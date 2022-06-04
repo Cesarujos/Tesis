@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-04T18:06:21.119Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.33" etag="Gv7q-4M0PPY2MMTrRfgt" version="19.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-04T18:48:46.925Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.33" etag="LwbgTd_q6BcVNTmlWvD3" version="19.0.0" type="github">
   <diagram id="HLWjeGLK8E62nagD_4CA" name="Page-1">
     <mxGraphModel dx="1038" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -66,13 +66,13 @@
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-26" target="3VRAeIj3tUrWjSmLoF6Z-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-26" value="Interpolación con Kriging (IDW) para cada tiempo de retorno" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-26" value="Interpolación con Kriging (IDW) para cada tiempo de retorno" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="205" y="577.5" width="140" height="75" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-29" target="3VRAeIj3tUrWjSmLoF6Z-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-29" value="Extracción del promedio de precipitación en la cuenca" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-29" value="Extracción del promedio de precipitación en la cuenca" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="215" y="707.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-32" value="Si" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
