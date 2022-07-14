@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-14T21:41:35.633Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49" etag="-BfpTAb8aO5PJzJTuRVJ" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-14T21:43:05.548Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49" etag="saQPYRw3d1AY4lYU1olw" version="20.0.4" type="github">
   <diagram id="HLWjeGLK8E62nagD_4CA" name="Page-1">
-    <mxGraphModel dx="1920" dy="1770" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2714" dy="2207" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -46,7 +46,7 @@
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-16" target="3VRAeIj3tUrWjSmLoF6Z-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-16" value="Borrar dato dudoso" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-16" value="Borrar datos dudosos" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="205" y="350" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="K1i-vkmHz3E5f6IHQn4M-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-18" target="K1i-vkmHz3E5f6IHQn4M-6" edge="1">
@@ -64,7 +64,7 @@
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-23" target="3VRAeIj3tUrWjSmLoF6Z-34" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-23" value="Elaboración de hietogramas con el método de bloques alternos para cada subcuenca y cada periodo de retorno" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-23" value="Elaboración de hietogramas con el método de bloques alternos para cada subcuenca y cada periodo de retorno" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#6B96FA;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="155" y="560" width="170" height="95" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-26" target="3VRAeIj3tUrWjSmLoF6Z-29" edge="1">
