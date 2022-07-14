@@ -1,20 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2022-07-14T21:38:19.790Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49" etag="zinPBk4k8qd15r_K6IdT" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-14T21:41:35.633Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49" etag="-BfpTAb8aO5PJzJTuRVJ" version="20.0.4" type="github">
   <diagram id="HLWjeGLK8E62nagD_4CA" name="Page-1">
-    <mxGraphModel dx="2557" dy="2121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1920" dy="1770" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="s36QY2iIZomX1g9JRoiT-18" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;strokeColor=#82b366;fillColor=#C9DBC8;" vertex="1" parent="1">
-          <mxGeometry x="370" y="10" width="430" height="930" as="geometry" />
+          <mxGeometry x="370" width="430" height="940" as="geometry" />
         </mxCell>
         <mxCell id="s36QY2iIZomX1g9JRoiT-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#84ADE3;strokeColor=#000000;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="-70" width="430" height="940" as="geometry" />
+          <mxGeometry x="-60" width="420" height="940" as="geometry" />
         </mxCell>
-        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-4" target="3VRAeIj3tUrWjSmLoF6Z-5" edge="1">
+        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-4" target="3VRAeIj3tUrWjSmLoF6Z-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-4" value="Precipitación &lt;br&gt;CHIRPS" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="-200" y="60" width="120" height="60" as="geometry" />
+          <mxGeometry x="-57" y="130" width="105" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-5" target="3VRAeIj3tUrWjSmLoF6Z-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -157,8 +157,9 @@
         <mxCell id="s36QY2iIZomX1g9JRoiT-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-58" target="s36QY2iIZomX1g9JRoiT-3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="780" y="868" />
-              <mxPoint x="780" y="784" />
+              <mxPoint x="780" y="867" />
+              <mxPoint x="780" y="751" />
+              <mxPoint x="1012" y="751" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -190,25 +191,30 @@
           <mxGeometry x="-50" y="631.25" width="150" height="90" as="geometry" />
         </mxCell>
         <mxCell id="K1i-vkmHz3E5f6IHQn4M-9" value="Modelamiento hidrológico e hidráulico para el estudio de inundaciones" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#FF0000;strokeColor=#b85450;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="680" y="-120" width="195" height="60" as="geometry" />
+          <mxGeometry x="315" y="-90" width="490" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s36QY2iIZomX1g9JRoiT-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s36QY2iIZomX1g9JRoiT-3" target="s36QY2iIZomX1g9JRoiT-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="s36QY2iIZomX1g9JRoiT-3" value="Modelamiento en Hec-RAS" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#BD7000;fillColor=#f0a30a;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="1012.5" y="753.75" width="120" height="60" as="geometry" />
+          <mxGeometry x="1012.5" y="721.25" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s36QY2iIZomX1g9JRoiT-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s36QY2iIZomX1g9JRoiT-5" target="s36QY2iIZomX1g9JRoiT-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="s36QY2iIZomX1g9JRoiT-5" value="Condiciones de contorno" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="1167.5" y="753.75" width="120" height="60" as="geometry" />
+          <mxGeometry x="1167.5" y="721.25" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s36QY2iIZomX1g9JRoiT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="s36QY2iIZomX1g9JRoiT-7" target="s36QY2iIZomX1g9JRoiT-3">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="689" />
+              <mxPoint x="990" y="736" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="s36QY2iIZomX1g9JRoiT-7" value="Coeficiente de rugosidad de Mannig&#39;s" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="860" y="691.25" width="120" height="60" as="geometry" />
+          <mxGeometry x="860" y="658.75" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s36QY2iIZomX1g9JRoiT-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="s36QY2iIZomX1g9JRoiT-9" target="3VRAeIj3tUrWjSmLoF6Z-34">
           <mxGeometry relative="1" as="geometry">
@@ -222,13 +228,18 @@
           <mxGeometry x="640" y="631.25" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s36QY2iIZomX1g9JRoiT-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="s36QY2iIZomX1g9JRoiT-11" target="s36QY2iIZomX1g9JRoiT-3">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="797" />
+              <mxPoint x="990" y="766" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="s36QY2iIZomX1g9JRoiT-11" value="Coeficientes de contracción y expansión" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="860" y="800" width="120" height="60" as="geometry" />
+          <mxGeometry x="860" y="767.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s36QY2iIZomX1g9JRoiT-15" value="Obtención de área inundable y secciones transversales" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#BD7000;fillColor=#f0a30a;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="1012.5" y="870" width="120" height="60" as="geometry" />
+          <mxGeometry x="1012.5" y="837.5" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
