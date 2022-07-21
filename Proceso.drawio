@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-21T22:28:22.881Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62" etag="FTEEJIIj6NeWpahCwGtr" version="20.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-21T22:30:13.253Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62" etag="EoAY85tohQy7w7uPAFDg" version="20.1.1" type="github">
   <diagram id="HLWjeGLK8E62nagD_4CA" name="Page-1">
-    <mxGraphModel dx="2310" dy="816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2714" dy="1038" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -104,13 +104,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-36" value="Elaboración de cuenca de captación hasta el la localidad de Araconta" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontColor=#000000;fontFamily=Times New Roman;" parent="1" vertex="1">
-          <mxGeometry x="550" y="60" width="120" height="60" as="geometry" />
+          <mxGeometry x="550" y="92" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-37" target="3VRAeIj3tUrWjSmLoF6Z-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-37" value="Modelo de &lt;br&gt;elevación digital &lt;br&gt;Hi-Res" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#E6E6E6;fontFamily=Times New Roman;" parent="1" vertex="1">
-          <mxGeometry x="380" y="60" width="120" height="60" as="geometry" />
+          <mxGeometry x="380" y="92" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-40" target="3VRAeIj3tUrWjSmLoF6Z-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -119,43 +119,43 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-40" value="Determinación de&lt;br&gt;&amp;nbsp;Rios y subcuencas" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
-          <mxGeometry x="550" y="160" width="120" height="60" as="geometry" />
+          <mxGeometry x="550" y="192" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="K1i-vkmHz3E5f6IHQn4M-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-42" target="K1i-vkmHz3E5f6IHQn4M-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-42" value="Exportación de las subcuencas" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
-          <mxGeometry x="380" y="160" width="120" height="60" as="geometry" />
+          <mxGeometry x="380" y="192" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Times New Roman;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-47" target="3VRAeIj3tUrWjSmLoF6Z-34" edge="1">
+        <mxCell id="3VRAeIj3tUrWjSmLoF6Z-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Times New Roman;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-47" target="3VRAeIj3tUrWjSmLoF6Z-34" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="430" y="310" />
+              <mxPoint x="430" y="342" />
               <mxPoint x="430" y="610" />
               <mxPoint x="500" y="610" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-47" value="Preparación de información en Hec-GeoHMS" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Times New Roman;" parent="1" vertex="1">
-          <mxGeometry x="527.5" y="280" width="165" height="60" as="geometry" />
+          <mxGeometry x="527.5" y="312" width="165" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-50" target="3VRAeIj3tUrWjSmLoF6Z-47" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-50" value="Elaboración de la curva número" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" parent="1" vertex="1">
-          <mxGeometry x="660" y="450" width="120" height="60" as="geometry" />
+          <mxGeometry x="660" y="482" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-52" target="3VRAeIj3tUrWjSmLoF6Z-50" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-52" value="Mapa de &lt;br&gt;Cobertura &lt;br&gt;vegetal" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#E6E6E6;fontFamily=Times New Roman;" parent="1" vertex="1">
-          <mxGeometry x="500" y="410" width="120" height="60" as="geometry" />
+          <mxGeometry x="500" y="442" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-54" target="3VRAeIj3tUrWjSmLoF6Z-50" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3VRAeIj3tUrWjSmLoF6Z-54" value="Mapa de &lt;br&gt;Suelos" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#E6E6E6;fontFamily=Times New Roman;" parent="1" vertex="1">
-          <mxGeometry x="490" y="490" width="120" height="60" as="geometry" />
+          <mxGeometry x="490" y="522" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s36QY2iIZomX1g9JRoiT-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;" parent="1" source="3VRAeIj3tUrWjSmLoF6Z-58" target="s36QY2iIZomX1g9JRoiT-3" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -267,8 +267,11 @@
         <mxCell id="npEJbkAN3SEkmpXRU5l9-2" value="ALGORITMO PROGRAMADO EN R" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontStyle=1;rotation=270;fontFamily=Times New Roman;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="-155" y="425" width="260" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="npEJbkAN3SEkmpXRU5l9-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" edge="1" parent="1" source="npEJbkAN3SEkmpXRU5l9-6" target="3VRAeIj3tUrWjSmLoF6Z-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="npEJbkAN3SEkmpXRU5l9-6" value="INICIO" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=14;fontColor=#FFFFFF;fillColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="550" y="10" width="120" height="40" as="geometry" />
+          <mxGeometry x="550" y="20" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
