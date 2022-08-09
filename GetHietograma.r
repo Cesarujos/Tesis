@@ -1,38 +1,58 @@
-
+# Library -----------------------------------------------------------------
 library(chirps)
 library(moments)
 library(dplyr)
-
 library(sf)
 library(sp)
 library(rgdal)
 library(raster)
 library(gstat)
-
 library(openxlsx)
-###Insercción de ruta de trabajo
+
+# ROUTE -------------------------------------------------------------------
+
 setwd("C:\\Users\\uriar\\OneDrive\\UNMSM\\9no Ciclo\\Elaboración de tesis\\Tesis")
 
-######DATOS DE ENTRADA############Subcuenca exportada de HEC-GeoHMS
+
+# SUBBASIN ----------------------------------------------------------------
+
 subcuencas <- st_read("C:\\Users\\uriar\\OneDrive\\UNMSM\\Tesis\\Files\\Subcuencas.shp")
 
 
-################PROCESO#####################
-#Centroides
+# ANIOS -------------------------------------------------------------------
 
-centroides<- SpatialPoints(coords=coordinates(as_Spatial(subcuencas)),
-                            proj4string=CRS(proj4string(as_Spatial(subcuencas))))
-centroides$DrainID <- subcuencas$DrainID
+anios <- list(inicio = 1982, final = 2021)
+tr = c(2, 5, 10, 20, 50, 100, 200, 500, 1000)
 
-centroides_wgs84 <- spTransform(centroides, CRS("+init=epsg:4326"))
-coord <- coordinates(centroides_wgs84)
-coord <- as.data.frame(coord)
-coord <- cbind(subcuenca = paste("W",centroides$DrainID,"0", sep = ""), coord)
-#Años
-anios <- list(inicio = 1982, final = 2021) #Año de inicio y final
+# CENTROIDS ---------------------------------------------------------------
 
-########PROCESO##########
-#PRUEBA DE DATOS DUDOSOS - outlier
+centroid <- function(subbasin){
+  centroides<- SpatialPoints(coords=coordinates(as_Spatial(subbasin)),
+                             proj4string=CRS(proj4string(as_Spatial(subbasin))))
+  centroides$DrainID <- subbasin$DrainID
+  
+  centroides_wgs84 <- spTransform(centroides, CRS("+init=epsg:4326"))
+  
+  return(list(UTM = centroides, WGS84 = centroides_wgs84))
+}
+
+# ASYMETRY ----------------------------------------------------------------
+
+asimetria <- function(cadena){
+  cantidad <- as.numeric(length(cadena))
+  promtemp <- mean(cadena)
+  desv_temp <- sd(cadena)
+  temp <- 0
+  for (item in cadena) {
+    x <- (item - promtemp)^3
+    temp <- temp + x
+  }
+  asimetria <- cantidad*temp/((cantidad-1)*(cantidad-2)*desv_temp^3)
+  return(asimetria)
+}
+
+# OUTLIER -----------------------------------------------------------------
+
 dudoso <- function(ppmax){
   Kn <- 2.682 ##Para 40 datos
   ppmax_log <- c()
@@ -56,22 +76,12 @@ dudoso <- function(ppmax){
   return(ppmax)
 }
 
-##CALCULO DE ASIMETRÍA
-asimetria <- function(cadena){
-  cantidad <- as.numeric(length(cadena))
-  promtemp <- mean(cadena)
-  desv_temp <- sd(cadena)
-  temp <- 0
-  for (item in cadena) {
-    x <- (item - promtemp)^3
-    temp <- temp + x
-  }
-  asimetria <- cantidad*temp/((cantidad-1)*(cantidad-2)*desv_temp^3)
-  return(asimetria)
-}
+# P24 ---------------------------------------------------------------------
 
-#ELABORACIÓN DE TABLA
-get_p24 <- function(){
+get_p24 <- function(centroides){
+  coord <- coordinates(centroides)
+  coord <- as.data.frame(coord)
+  coord <- cbind(subbasin = paste("W",centroides$DrainID,"0", sep = ""), coord)
   lonlat <- data.frame(lon = coord$coords.x1,
                        lat = coord$coords.x2) #Dataframe de latitud y longitud
   dates <- c(paste(anios$inicio,"01-01",sep = "-"), paste(anios$final,"12-31",sep = "-"))
@@ -91,16 +101,13 @@ get_p24 <- function(){
     ppmax <- dudoso(ppmax)
     result_dataframe = cbind(result_dataframe, i = ppmax)
   }
-  colnames(result_dataframe) <- c('anio', coord$subcuenca )
+  colnames(result_dataframe) <- c('anio', coord$subbasin )
   return(result_dataframe)
 }
 
-p24 <- get_p24()
+# DISTRIBUTIONS -----------------------------------------------------------
 
-#write.csv(p24, file="Prueba.csv")
-tr = c(2, 5, 10, 20, 50, 100, 200, 500, 1000)
-
-###Distribución NORMAL
+#Distribución NORMAL
 normal <- function(cadena){
   prom <- mean(cadena)
   desv <- sd(cadena)
@@ -121,7 +128,7 @@ normal <- function(cadena){
   return(list(data = prep_normal, error = err))
 }
 
-###Distribución LogNormal###
+#Distribución LogNormal
 log_normal <- function(cadena){
   cadena_log <- log(cadena)
   prom <- mean(cadena_log)
@@ -147,7 +154,7 @@ log_normal <- function(cadena){
 }
 
 
-###Pearson tipo III ########
+#Pearson tipo III
 pearsonIII <- function(cadena){
   g <- asimetria(cadena)
   prom <- mean(cadena)
@@ -170,7 +177,7 @@ pearsonIII <- function(cadena){
   err <- (sum((cadena - tr_cadena)^2)/length(cadena))^0.5
   return(list(data = pearson, error = err))
 }
-####Log pearson#####
+#Log pearson tipo III
 log_personIII <- function(cadena){
   cadena_log <- log(cadena)
   prom <- mean(cadena_log)
@@ -198,7 +205,7 @@ log_personIII <- function(cadena){
   return(list(data = log_pearson, error = err))
 }
 
-#####Gumbell####
+#Gumbell
 
 gumbell<- function(cadena){
   #Parametros necesarios
@@ -229,7 +236,8 @@ gumbell<- function(cadena){
   return(list(data = gumbell_tr, error = err))
 }
 
-##Obtener extrapolacion de datos
+
+# EXTRAPOLATION -----------------------------------------------------------
 
 get_extrapolation <- function(dataframe){
   extrapolation <- data.frame( retorno = tr)
@@ -261,19 +269,14 @@ get_extrapolation <- function(dataframe){
     if(min_error==errors[5]){
       datos <- gum$data
     }
-  extrapolation <- cbind(extrapolation, i = datos)
-  err_punt <- c(err_punt, min_error)
+    extrapolation <- cbind(extrapolation, i = datos*1.13)
+    err_punt <- c(err_punt, min_error)
   }
-  colnames(extrapolation) <- c('T', coord$subcuenca)
+  colnames(extrapolation) <- c('T', colnames(p24)[-c(1)])
   return(list(data = extrapolation, list_errores = err_punt))
 }
 
-p24_extrapolation <- get_extrapolation(p24)$data
-errores <- get_extrapolation(p24)$list_errores
-
-###Correccion de extrapolacion
-p24_extrapolation <- p24_extrapolation*1.13
-
+# MEAN --------------------------------------------------------------------
 
 get_mean_pp_basin <- function(subbasin, centroids, extrapolation){
   #Grills
@@ -314,13 +317,12 @@ get_mean_pp_basin <- function(subbasin, centroids, extrapolation){
   }
   colnames(mean_pp_basin) <- c("Subcuenca", paste("TR",tr, sep = ""))
   mean_pp_basin <- data.frame(t(mean_pp_basin[-1]))
-  colnames(mean_pp_basin) <- c(coord$subcuenca)
+  colnames(mean_pp_basin) <- c(colnames(extrapolation)[-c(1)])
   return(mean_pp_basin)
 }
 
-mean_pp_basin<-get_mean_pp_basin(subcuencas, centroides, p24_extrapolation)
 
-######Creación de hietogramas
+# HIETROGRAMA -------------------------------------------------------------
 
 get_hietogramas <- function(cadena){
   duracion <- c(5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60,
@@ -393,6 +395,8 @@ get_hietogramas <- function(cadena){
 }
 
 
+# LIST_HIETROGRAMAS -------------------------------------------------------
+
 get_list_hietogramas <- function(data_mean){
   data_pp <- list()
   for (item in c(1:ncol(data_mean))) {
@@ -400,13 +404,23 @@ get_list_hietogramas <- function(data_mean){
     colnames(temp)<- "A"
     temp <- temp$A
     
-     n_pp <- get_hietogramas(temp)
+    n_pp <- get_hietogramas(temp)
     data_pp[[names(data_mean[item])]] <- n_pp
   }
   return(data_pp)
 }
 
+
+# APLICATION --------------------------------------------------------------
+
+centroides <- centroid(subcuencas)
+p24 <- get_p24(centroides$WGS84)
+p24_extrapolation <- get_extrapolation(p24)$data
+errores <- get_extrapolation(p24)$list_errores
+mean_pp_basin<-get_mean_pp_basin(subcuencas, centroides$UTM, p24_extrapolation)
 hietogramas_24 <- get_list_hietogramas(mean_pp_basin)
 
 
-openxlsx::write.xlsx(hietogramas_24, file = "data.xlsx")
+# EXPORT_XLSX -------------------------------------------------------------
+
+openxlsx::write.xlsx(hietogramas_24, file = "Hietogramas.xlsx")
